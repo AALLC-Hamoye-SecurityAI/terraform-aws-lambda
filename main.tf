@@ -35,5 +35,7 @@ resource "aws_lambda_function" "lambda_function" {
   environment {
     variables = var.lambda_variables
   }
+
+  layers = var.layer_arn
 }
 

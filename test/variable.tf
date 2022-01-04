@@ -25,6 +25,11 @@ variable "function_handler" {
   type        = string
 }
 
+variable "lambda_variables" {
+  description = "Lambda function inputs. Format is { foo = \"bar\" }"
+  default     = {}
+}
+
 
 variable "timeout" {
   description = "amount of time for the function to run."

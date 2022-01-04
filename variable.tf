@@ -37,3 +37,4 @@ variable "timeout" {
 }
 
 variable "role_name" {}
+variable "layer_arn" {}
