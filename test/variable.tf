@@ -51,3 +51,4 @@ variable "secret_key" {
 
 
 variable "role_name" {}
+variable "layer_arn" {}
