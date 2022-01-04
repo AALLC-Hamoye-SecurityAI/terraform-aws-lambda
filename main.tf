@@ -33,9 +33,7 @@ resource "aws_lambda_function" "lambda_function" {
 
   # input variables for functions are injected to lambda process environment and can be accessed from env in code.
   environment {
-    variables = {
-      name = var.env_name
-    }
+    variables = var.lambda_variables
   }
 }
 

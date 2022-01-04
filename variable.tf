@@ -26,20 +26,14 @@ variable "function_handler" {
 }
 
 
+
+variable "lambda_variables" {
+  description = "Lambda function inputs. Format is { foo = \"bar\" }"
+  default     = {}
+}
+
 variable "timeout" {
   description = "amount of time for the function to run."
-}
-
-variable "access_key" {
-  description = "aws access key"
-  type        = string
-  default     = "null"
-}
-
-variable "secret_key" {
-  description = "aws secret key"
-  type        = string
-  default     = "null"
 }
 
 variable "role_name" {}
