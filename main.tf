@@ -29,7 +29,8 @@ resource "aws_lambda_function" "lambda_function" {
   # uses the file hash to determine if the lambda function has changed or is the same on the cloud
   source_code_hash = filebase64sha256(var.filename)
 
-  runtime = var.runtime
+  runtime     = var.runtime
+  memory_size = var.memory_size
 
   # input variables for functions are injected to lambda process environment and can be accessed from env in code.
   environment {
